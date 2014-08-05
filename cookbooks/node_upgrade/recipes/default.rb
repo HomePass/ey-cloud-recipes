@@ -9,7 +9,7 @@ Chef::Log.info "Installing appropriate version of Node"
   end
 
   execute "select nodejs version" do
-    command "eselect nodejs set 0.10.28"
+    command "sudo eselect nodejs set 0.10.28"
     action :nothing
   end 
 
