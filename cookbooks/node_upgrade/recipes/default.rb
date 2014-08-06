@@ -10,6 +10,5 @@ Chef::Log.info "Installing appropriate version of Node"
 
   execute "select nodejs version" do
     command "eselect nodejs set 0.10.28"
-    action :nothing
   end 
 
