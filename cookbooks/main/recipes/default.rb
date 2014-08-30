@@ -112,6 +112,7 @@
 #include_recipe "magento"
 
 include_recipe "node_upgrade"
+include_recipe "papertrail"
 
 #enable Extension modules for a given Postgresql database
 # if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
