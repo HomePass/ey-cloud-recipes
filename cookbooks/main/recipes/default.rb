@@ -111,6 +111,7 @@
 #uncomment to include the Magento recipe
 #include_recipe "magento"
 
+include_recipe "emerge"
 include_recipe "node_upgrade"
 include_recipe "papertrail"
 
