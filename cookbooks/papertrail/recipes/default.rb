@@ -110,7 +110,6 @@ bash 'extract and copy executable' do
   code <<-EOH
     mkdir -p #{remote_syslog_extract_path}
     tar xzf #{remote_syslog_src_filename} -C #{remote_syslog_extract_path}
-    cp #{remote_syslog_extract_path}/remote_syslog/remote_syslog /usr/bin
     mv #{remote_syslog_extract_path}/remote_syslog/remote_syslog /usr/local/bin
     EOH
   not_if { ::File.exists?(remote_syslog_extract_path) }
