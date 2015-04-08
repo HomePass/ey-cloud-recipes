@@ -23,7 +23,7 @@ PAPERTRAIL_CONFIG = {
   :hostname                  => [app_name, node[:instance_role], `hostname`.chomp].join('_'),
   :other_logs => [
     '/var/log/engineyard/nginx/*log',
-    '/var/log/engineyard/apps/*/*.log',
+    #'/var/log/engineyard/apps/*/*.log', # push node logs directly from app
     '/var/log/mysql/*.log',
     '/var/log/mysql/mysql.err',
   ],
